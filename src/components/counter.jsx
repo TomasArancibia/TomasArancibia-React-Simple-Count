@@ -4,6 +4,7 @@ import { faClock } from '@fortawesome/free-regular-svg-icons'
 
 const Counter = (props) => {
     const [count, setCount] = useState(0)
+    const [aux, setAux] = useState(0)
     const increment = (num) => {
         let number = num;
         number == 999999 ? number : number++
@@ -37,12 +38,10 @@ const Counter = (props) => {
 
 
     useEffect(() => {
-
         const interval = setInterval(() => {
             if (props.seconds) { 
-                console.log((props.seconds))
-                setCount(decrement(Number(props.seconds)))
-                console.log(decrement(count))
+                setCount(Number(props.seconds) - aux)
+                setAux(increment(aux))
                 }
             else {
                 setCount(increment(count));
