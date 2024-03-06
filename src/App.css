@@ -1,0 +1,56 @@
+.deck {
+  width: 80%;
+  height: 210px;
+  margin: auto;
+  margin-top: 30px;
+  border: 5px solid grey;
+  border-radius: 30px;
+  display: flex;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  justify-content: space-around;
+}
+
+.inside {
+  height: 150px;
+  background: rgba(0, 0, 0, 0.171);
+  width: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+  box-shadow: 0px 0px 0px 8px rgba(63, 60, 60, 0.205); 
+  border-radius: 30px;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.formcon {
+  width: 30%;
+  height: 100px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.buttonCustom{
+  width: 30%;
+  height: 90px;
+  border-radius: 0px 30px 30px 0px; 
+  background: rgba(0, 0, 0, 0.171);
+  border: 2.5px solid grey;
+  float: right;
+}
+
+.limitTimer {
+  width: 70%;
+  height: 90px;
+  border-radius: 30px 0px 0px 30px; 
+  border: 2.5px solid grey;
+  float: left;
+  color: white;
+  font-size: 18px;
+}
+.limitTimer::placeholder{
+  color: white;
+  font-size: 18px;
+}
